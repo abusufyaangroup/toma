@@ -1,0 +1,1 @@
+This starter code is provided for the user's TOMA project. Replace sample artwork and catalogue items with content you own or are licensed to distribute. Third-party services (Cloudflare, Paystack, fonts) are governed by their respective terms.
