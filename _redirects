@@ -1,0 +1,2 @@
+/api/* https://YOUR-WORKER-DOMAIN/api/:splat 200
+/paystack/* https://YOUR-WORKER-DOMAIN/paystack/:splat 200
