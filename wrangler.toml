@@ -5,7 +5,7 @@ compatibility_date = "2026-10-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "toma-db"
-database_id = "REPLACE_WITH_YOUR_CLOUDFLARE_D1_DATABASE_ID"
+database_id = "01d4a52c-c3e2-4c4f-addd-62d2845a3013"
 migrations_dir = "migrations"
 
 [vars]
