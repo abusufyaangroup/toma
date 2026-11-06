@@ -1,1 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10091d">
+  <meta name="description" content="TOMA — movies, series and entertainment.">
+  <title>TOMA — Movies & Entertainment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="TOMA home"><span class="brand-mark">T</span><span>TOMA</span></a>
+    <nav>
+      <a class="active" href="#home">Home</a><a href="#movies">Movies</a><a href="#series">TV Shows</a><a href="#premium">Premium</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="signin" id="accountBtn">Sign in</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR ENTERTAINMENT, YOUR WAY</div>
+        <h1>Stories worth<br><em>staying in for.</em></h1>
+        <p>Discover movies, binge-worthy series and fresh entertainment — all in one place.</p>
+        <div class="hero-buttons"><a class="btn primary" href="#movies">Explore titles <span>→</span></a><a class="btn ghost" href="#premium">Get Premium</a></div>
+        <div class="hero-meta"><span>✦ Curated entertainment</span><span>● New titles added regularly</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="poster-stack">
+          <div class="poster poster-back"><span>ORIGINAL SERIES</span><b>THE<br>LAST<br>HORIZON</b></div>
+          <div class="poster poster-front"><span>FEATURED FILM</span><b>BEYOND<br>THE<br>SHADOW</b><small>EXCLUSIVE ON TOMA</small></div>
+        </div>
+        <div class="floating-tag"><span class="play">▶</span><span><b>Now streaming</b><small>Discover your next favourite</small></span></div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span class="benefit-icon">✦</span><b>Handpicked stories</b><small>Entertainment for every mood</small></div>
+      <div><span class="benefit-icon">▣</span><b>Movies & series</b><small>One home for your favourites</small></div>
+      <div><span class="benefit-icon">◈</span><b>Premium experience</b><small>More access, more enjoyment</small></div>
+    </section>
+
+    <section class="catalogue section" id="movies">
+      <div class="section-heading"><div><div class="eyebrow">FIND YOUR NEXT WATCH</div><h2>Explore <em>TOMA</em></h2></div><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="movie">Movies</button><button class="filter" data-filter="series">TV Shows</button></div></div>
+      <div class="search-row" id="searchRow"><input id="searchInput" type="search" placeholder="Search movies, shows or genres..." aria-label="Search titles"></div>
+      <div class="cards" id="cards">
+        <article class="title-card" data-type="movie" data-name="Midnight Run" data-genre="Action"><div class="cover cover-one"><span class="cover-label">TOMA PICK</span><span class="cover-title">MIDNIGHT<br>RUN</span><span class="cover-foot">ACTION · 2026</span></div><div class="card-info"><div><b>Midnight Run</b><small>Action · 2026</small></div><span class="tag">Movie</span></div></article>
+        <article class="title-card" data-type="series" data-name="The Crowned City" data-genre="Drama"><div class="cover cover-two"><span class="cover-label">NEW SERIES</span><span class="cover-title">THE<br>CROWNED<br>CITY</span><span class="cover-foot">DRAMA · 1 SEASON</span></div><div class="card-info"><div><b>The Crowned City</b><small>Drama · Series</small></div><span class="tag">Series</span></div></article>
+        <article class="title-card" data-type="movie" data-name="Desert Bloom" data-genre="Drama"><div class="cover cover-three"><span class="cover-label">FEATURED</span><span class="cover-title">DESERT<br>BLOOM</span><span class="cover-foot">DRAMA · 2026</span></div><div class="card-info"><div><b>Desert Bloom</b><small>Drama · 2026</small></div><span class="tag">Movie</span></div></article>
+        <article class="title-card" data-type="series" data-name="Code Black" data-genre="Thriller"><div class="cover cover-four"><span class="cover-label">TOMA SERIES</span><span class="cover-title">CODE<br>BLACK</span><span class="cover-foot">THRILLER · 8 EPISODES</span></div><div class="card-info"><div><b>Code Black</b><small>Thriller · Series</small></div><span class="tag">Series</span></div></article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No titles match your search. Try another title or category.</p>
+      <p class="catalogue-note">These are sample catalogue cards. Add your licensed titles through the admin API after deployment.</p>
+    </section>
+
+    <section class="premium section" id="premium">
+      <div class="premium-glow"></div><div class="premium-copy"><div class="eyebrow">UPGRADE YOUR EXPERIENCE</div><h2>Make it <em>Premium.</em></h2><p>Unlock the premium TOMA experience with a simple monthly subscription.</p><ul><li>Access to Premium-labelled titles</li><li>One simple monthly plan</li><li>Cancel or manage through your account</li></ul></div>
+      <div class="price-card"><div class="crown">♛</div><span class="plan-label">TOMA PREMIUM</span><div class="price">₦1,500<span>/ month</span></div><p>Monthly recurring subscription</p><button class="btn primary full" id="subscribeBtn">Subscribe with Paystack</button><small>Secure checkout powered by Paystack. Availability depends on your account and payment status.</small></div>
+    </section>
+
+    <section class="admin section" id="admin">
+      <div><div class="eyebrow">CONTENT MANAGEMENT</div><h2>Admin <em>workspace</em></h2><p>Manage the catalogue from your secured admin environment. This starter includes an API endpoint; connect it to a protected admin login before production use.</p></div>
+      <div class="admin-box"><div class="admin-icon">▤</div><div><b>Admin dashboard starter</b><small>Title creation endpoint is available in the Worker API.</small></div><span class="tag">API ready</span></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">T</span><span>TOMA</span></a><span>Movies. Series. Entertainment.</span><small>© <span id="year"></span> TOMA. All rights reserved.</small></footer>
+
+  <dialog id="accountDialog"><form method="dialog" class="dialog-card"><button class="close" aria-label="Close">×</button><div class="eyebrow">WELCOME TO TOMA</div><h2>Your account</h2><p class="dialog-note">Account registration and sign-in must be connected to a production authentication provider before launch.</p><label>Email address<input type="email" placeholder="you@example.com" required></label><button class="btn primary full" value="close">Continue (demo)</button></form></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
 
