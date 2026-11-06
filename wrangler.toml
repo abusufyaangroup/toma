@@ -2,6 +2,7 @@ name = "toma-streaming-api"
 main = "worker/index.js"
 compatibility_date = "2026-10-01"
 
+
 [[d1_databases]]
 binding = "DB"
 database_name = "toma-db"
